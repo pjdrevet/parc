@@ -5,20 +5,30 @@
  */
 package com.mycompany.parcautomobile;
 
+import com.vaadin.data.util.BeanItemContainer;
+
+
 /**
  *
  * @author user
  */
 public class Vehicule {
 
-    String marque;
-    String modele;
-    double prix;
+    private int id;
+    private String marque;
+    private String modele;
+    private double prix;
+    private static BeanItemContainer<Vehicule> vehicules = new BeanItemContainer<>(Vehicule.class);
 
-    public Vehicule(String marque, String modele, double prix) {
+    public Vehicule() {
+    }
+
+    public Vehicule(int id, String marque, String modele, double prix) {
+        this.id = id;
         this.marque = marque;
         this.modele = modele;
         this.prix = prix;
+        this.vehicules.addBean(this);
     }
 
     public String getMarque() {
@@ -44,7 +54,17 @@ public class Vehicule {
     public void setPrix(double prix) {
         this.prix = prix;
     }
-    
-    
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public static BeanItemContainer<Vehicule> getVehicules() {
+        return vehicules;
+    }
 
 }
