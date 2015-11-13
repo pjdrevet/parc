@@ -184,9 +184,10 @@
 				<configuration>
 					<container>
 						<containerId>glassfish4x</containerId>
+						<home>/opt/glassfish4</home>
 					</container>
 					<configuration>
-						<type>runtime</type>
+						<type>existing</type>
 						<properties>
 							<cargo.hostname>localhost</cargo.hostname>
 							<cargo.remote.username>admin</cargo.remote.username>
