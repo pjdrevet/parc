@@ -184,7 +184,6 @@
 				<configuration>
 					<container>
 						<containerId>glassfish4x</containerId>
-						<type>remote</type>
 					</container>
 					<configuration>
 						<type>runtime</type>
