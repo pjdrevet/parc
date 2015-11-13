@@ -183,21 +183,11 @@
 				<version>1.4.0</version>
 				<configuration>
 					<container>
-		                        <containerId>glassfish4x</containerId>
-		                        <home>${glassfish.installDirectory}</home>
-		                    </container>
-		                    <configuration>
-		                        <type>standalone</type>
-		                        <home>${basedir}/target/glassfish4x</home>
-		
-		                    </configuration>
-					<!--<container>
 						<containerId>glassfish4x</containerId>
 						<type>remote</type>
 					</container>
 					<configuration>
-						<type>existing</type>
-						<home>/opt/glassfish4/glassfish</home>
+						<type>runtime</type>
 						<properties>
 							<cargo.hostname>localhost</cargo.hostname>
 							<cargo.remote.username>admin</cargo.remote.username>
@@ -205,7 +195,7 @@
 							<cargo.glassfish.admin.port>4848</cargo.glassfish.admin.port>
                         				<cargo.glassfish.domain.name>domain1</cargo.glassfish.domain.name>
 						</properties>
-					</configuration>-->
+					</configuration>
 					<deployables>
 						<deployable>
 							<groupId>${project.groupId}</groupId>
