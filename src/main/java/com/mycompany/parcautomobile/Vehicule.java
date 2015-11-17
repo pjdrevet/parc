@@ -66,5 +66,9 @@ public class Vehicule {
     public static BeanItemContainer<Vehicule> getVehicules() {
         return vehicules;
     }
+    
+    public double getPrixMajore(double percent) {
+    	return this.prix * percent;
+    }
 
 }
