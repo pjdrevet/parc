@@ -19,7 +19,7 @@
 		<!-- properties for deployment -->
         <server.hostname>localhost</server.hostname>
         <server.admin.username>admin</server.admin.username>
-        <server.admin.password>adminws</server.admin.password>
+        <server.admin.password>adminsw</server.admin.password>
         <server.admin.port>4848</server.admin.port>
         <server.domain.name>domain1</server.domain.name>
         <server.app.name>/myapp</server.app.name>
