@@ -68,7 +68,7 @@ public class Vehicule {
     }
     
     public double getPrixMajore(double percent) {
-    	return this.prix * (1 + (percent/100));
+    	return this.prix * percent;
     }
 
 }
