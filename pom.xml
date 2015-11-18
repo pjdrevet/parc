@@ -245,6 +245,29 @@
 			</plugin>
 			<!-- end deployment cargo -->
 			
+			<!-- for audit and quality -->			
+			<plugin>
+		           <groupId>org.codehaus.mojo</groupId>
+		           <artifactId>findbugs-maven-plugin</artifactId>
+		           <version>${findbugs.version}</version>
+	        </plugin>
+		        <plugin>
+		           <groupId>org.codehaus.mojo</groupId>
+		           <artifactId>cobertura-maven-plugin</artifactId>
+		           <version>${cobertura.version}</version>
+		           <configuration>
+		               <formats>
+		                   <format>xml</format>
+		               </formats>
+	        		</configuration>
+	        </plugin>
+	        <plugin>
+		          <groupId>org.apache.maven.plugins</groupId>
+		          <artifactId>maven-pmd-plugin</artifactId>
+		          <version>${pmd.version}</version>
+	        </plugin>
+			<!-- end audit quality -->
+			
 		</plugins>
 
 		<pluginManagement>
