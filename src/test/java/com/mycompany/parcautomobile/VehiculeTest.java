@@ -8,12 +8,18 @@ public class VehiculeTest {
 	@Test
 	public void testPrixMajore() {
 		
+		// le pourcentage de majoration
 		double percent = 10.00;
 		
+		// initialisation de l'objet vehicule
 		Vehicule vehicule = new Vehicule();
-		vehicule.setPrix(1000.00);
+		// affectation du prix
+		vehicule.setPrix(10000.00);
 		
-		Assert.assertTrue(vehicule.getPrixMajore(percent) == 10000.00);
+		// calcul du prix majoré
+		double prixMajore = vehicule.getPrixMajore(percent);
+		
+		Assert.assertTrue(prixMajore == 11000.00);
 
 	}
 
