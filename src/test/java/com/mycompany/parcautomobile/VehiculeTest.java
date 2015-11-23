@@ -12,6 +12,7 @@ public class VehiculeTest {
 		Vehicule vehicule = new Vehicule();
 		// affectation du prix
 		vehicule.setPrix(10000.00);
+		vehicule.setMarque("Peugeot");
 		
 		// calcul du prix majoré
 		double prixMajore = vehicule.getPrixMajore();
